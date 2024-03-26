@@ -33,6 +33,7 @@ function Hero() {
       <div className="hero-all">
         <form onSubmit={handleSubmit} action="">
           <input
+            required
             value={info}
             onChange={(e) => setInfo(e.target.value)}
             type="text"
