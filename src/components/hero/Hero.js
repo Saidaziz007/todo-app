@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Hero.css";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { IoAddCircleSharp } from "react-icons/io5";
 
 function Hero() {
   const [info, setInfo] = useState("");
@@ -38,7 +39,9 @@ function Hero() {
             onChange={(e) => setInfo(e.target.value)}
             type="text"
           />
-          <button>Add</button>
+          <button>
+            Add <IoAddCircleSharp />
+          </button>
         </form>
         <div className="wrapper">{cards}</div>
         {data.length === 0 ? (
