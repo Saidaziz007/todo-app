@@ -38,6 +38,7 @@ function Hero() {
             value={info}
             onChange={(e) => setInfo(e.target.value)}
             type="text"
+            placeholder="Write something about you"
           />
           <button>
             Add <IoAddCircleSharp />
